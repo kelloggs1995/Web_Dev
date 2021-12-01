@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="assets/img/favicon.ico" type="image/ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/reboot.css">
+    <link rel="stylesheet" href="assets/css/master.css">
+    <script src="components/nav.js" type="text/javascript" defer></script>
+    <script src="components/footer.js" type="text/javascript" defer></script>
+    <script src="scripts/navigation.js" type="text/javascript" defer></script>
+    <script type="module" src="scripts/homeNews.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>DisasterNews - Your latest news on natural disasters</title>
+</head>
+
+<body>
+    <navopen-component></navopen-component>
+
+    <header id="header">
+        <video autoplay muted loop id="bgVideo">
+            <source src="assets/data/disasternews-background.mp4" type="video/mp4">
+        </video>
+        <nav-component class="nav--primary"></nav-component>
+        <section class="container">
+            <h1 class="header__title">Disaster<span class="span--blue">News</span></h1>
+            <p class="header__content">Welcome to DisasterNews, your disaster news website,
+                follow events around the world, and stay informed with our interactive map
+                which shows you the latest natural disasters live.</p>
+            <div class="btn-container">
+                <a class="btn btn--primary" href="#main">Discover the news <svg width="24" height="24"
+                        viewBox="0 0 24 24">
+                        <path d="M20 12L18.6 10.6L13 16.2L13 4L11 4L11 16.2L5.4 10.6L4 12L12 20L20 12Z" />
+                    </svg>
+                </a>
+                <a class="btn btn--secondary" href="map.html">Got to interactive map <svg width="24" height="24"
+                        viewBox="0 0 24 24">
+                        <path d="M12 4L10.6 5.4L16.2 11L4 11L4 13L16.2 13L10.6 18.6L12 20L20 12L12 4Z" />
+                    </svg>
+                </a>
+            </div>
+        </section>
+    </header>
+
+    <main id="main">
+        <section class="container">
+            <h2 class="title--primary">Headline</h2>
+            <div id="resultsHeadline">
+                <div id="topArticle"></div>
+                <div id="headlineArticle"></div>
+            </div>
+
+            <h2 class="title--primary">Latest news</h2>
+            <div id="resultsNews">
+            </div>
+
+            <div class="btn-container">
+                <a class="btn btn--primary" href="news.html">See more news<svg width="24" height="24"
+                        viewBox="0 0 24 24">
+                        <path d="M12 4L10.6 5.4L16.2 11L4 11L4 13L16.2 13L10.6 18.6L12 20L20 12L12 4Z" />
+                    </svg>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer-component></footer-component>
+</body>
+
+</html>

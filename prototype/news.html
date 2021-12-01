@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="assets/img/favicon.ico" type="image/ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/reboot.css">
+    <link rel="stylesheet" href="assets/css/master.css">
+    <script src="components/navsecond.js" type="text/javascript" defer></script>
+    <script src="components/footer.js" type="text/javascript" defer></script>
+    <script src="scripts/navigation.js" type="text/javascript" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="module" src="scripts/news.js" type="text/javascript"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/simplePagination.js/1.6/jquery.simplePagination.js"></script>
+    <script src="/node_modules/infinite-scroll/dist/infinite-scroll.pkgd.min.js"></script>
+
+    <title>Latest News - DisasterNews</title>
+</head>
+
+<body>
+    <navopen-component></navopen-component>
+
+    <header id="headerSecondary">
+        <section class="container">
+            <navsecond-component class="nav--secondary"></navsecond-component>
+        </section>
+    </header>
+    <section class="subheader">
+        <section class="container">
+            <h1 class="subheader__title">Latest news</h1>
+            <p class="content--secondary">All the latest articles on natural disasters around the world.</p>
+        </section>
+    </section>
+
+
+    <main id="main">
+        <section class="container">
+            <div class="filter__container">
+                <form class="search">
+                    <div class="search__container">
+                        <div class="search__icon"><svg width="24" height="24" viewBox="0 0 14 13" fill="">
+                                <path
+                                    d="M12.0462 10.8481L8.8556 7.55117C9.35071 6.88975 9.61854 6.08105 9.61854 5.23047C9.61854 4.2123 9.234 3.25762 8.53862 2.53779C7.84325 1.81797 6.9169 1.42188 5.93281 1.42188C4.94871 1.42188 4.02237 1.81924 3.32699 2.53779C2.63039 3.25635 2.24707 4.2123 2.24707 5.23047C2.24707 6.24736 2.63162 7.20459 3.32699 7.92314C4.02237 8.64297 4.94749 9.03906 5.93281 9.03906C6.75595 9.03906 7.53733 8.7623 8.17742 8.25195L11.368 11.5477C11.3774 11.5573 11.3885 11.565 11.4007 11.5702C11.413 11.5755 11.4261 11.5782 11.4393 11.5782C11.4525 11.5782 11.4656 11.5755 11.4779 11.5702C11.4901 11.565 11.5012 11.5573 11.5106 11.5477L12.0462 10.9954C12.0556 10.9857 12.063 10.9743 12.0681 10.9616C12.0731 10.949 12.0757 10.9355 12.0757 10.9218C12.0757 10.9081 12.0731 10.8946 12.0681 10.8819C12.063 10.8693 12.0556 10.8578 12.0462 10.8481ZM7.87888 7.24141C7.35796 7.77842 6.6675 8.07422 5.93281 8.07422C5.19812 8.07422 4.50766 7.77842 3.98674 7.24141C3.46705 6.70313 3.18079 5.98965 3.18079 5.23047C3.18079 4.47129 3.46705 3.75654 3.98674 3.21953C4.50766 2.68252 5.19812 2.38672 5.93281 2.38672C6.6675 2.38672 7.35919 2.68125 7.87888 3.21953C8.39856 3.75781 8.68482 4.47129 8.68482 5.23047C8.68482 5.98965 8.39856 6.70439 7.87888 7.24141Z"
+                                    fill="rgba(0, 0, 0, 38%)"></path>
+                            </svg></div><input placeholder="Search..." class="input" value="">
+                    </div>
+                </form>
+                <button class="search--favorite">Show Favorite</button>
+            </div>
+            <div id="resultsNews">
+            </div>
+        </section>
+        <div id="pagination-container"></div>
+    </main>
+    <footer-component></footer-component>
+</body>
+
+</html>

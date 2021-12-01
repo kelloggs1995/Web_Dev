@@ -1,0 +1,17 @@
+{
+  "name": "disasternews",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w assets/scss/ -o assets/css/ --recursive"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "infinite-scroll": "^4.0.1",
+    "jquery": "^3.6.0",
+    "newsapi": "^2.4.1",
+    "node-sass": "^6.0.1"
+  }
+}
